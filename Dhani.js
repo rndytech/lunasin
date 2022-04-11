@@ -294,7 +294,7 @@ break
 
 case 'mlbbfast':
 if (!isRegistered) return reply(mess.verify)
-const menu = `*MOBILE LEGENDS FAST*
+const ml = `*MOBILE LEGENDS FAST*
 _Proses 1-30 Menit Max 3 Jam_
 
 86        💎 = 𝙍𝙥 21.444
@@ -308,11 +308,11 @@ _Proses 1-30 Menit Max 3 Jam_
 1050    💎 = 𝙍𝙥 239.460
 2195    💎 = 𝙍𝙥 478.839
 3688    💎 = 𝙍𝙥 837.928`
-reply(menu)
+reply(ml)
 break
 case 'fffast':
 if (!isRegistered) return reply(mess.verify)
-const menu = `*FREE FIRE FAST VIA ID*
+const ff = `*FREE FIRE FAST VIA ID*
 _Proses 1-10 Menit Max 3 Jam_
 
 50     💎 = 𝙍𝙥 6.695
@@ -329,20 +329,20 @@ _Proses 1-10 Menit Max 3 Jam_
 
 _*M. Mingguan*_ = 𝙍𝙥 27.900
 _*M. Bulanan*_ = 𝙍𝙥 139.100`
-reply(menu)
+reply(ff)
 break
 case 'slighttwilight':
 if (!isRegistered) return reply(mess.verify)
-const menu = `*STARLIGHT / TWILIGHT FAST*
+const slight = `*STARLIGHT / TWILIGHT FAST*
 _Proses 1-30 Menit Max 3 Jam_
 
 _*Starlight*_ = 𝙍𝙥 105.000
 _*Twilight*_  = 𝙍𝙥 105.000`
-reply(menu)
+reply(slight)
 break
 case 'payment':
 if (!isRegistered) return reply(mess.verify)
-const menu = `*PAYMENT / PEMBAYARAN*
+const pay = `*PAYMENT / PEMBAYARAN*
 _Transfer sesuai nominal pembelian & sertakan buktinya_
 
 ✅ Dana : *belum tersedia*
@@ -355,7 +355,7 @@ _Transfer sesuai nominal pembelian & sertakan buktinya_
 *Nomor admin sama dengan nomor pembayaran*😊
 *SALDO BELUM MASUK TIDAK AKAN DIPROSES*
 *KALAU MAU TF DARI BANK > E-WALLET DIATAS WAJIB TANYA DULU KE ADMIN*`
-reply(menu)
+reply(pay)
 break
 case 'list':
 if (!isRegistered) return reply(mess.verify)
@@ -387,7 +387,7 @@ veri = sender
 _registered.push(sender)
 fs.writeFileSync('./database/registered.json', JSON.stringify(_registered))
 addRegisteredUser(sender, serialUser)
-const menu = `*「 DAFTAR BERHASIL 」*
+const perip = `*「 DAFTAR BERHASIL 」*
 
 ├ Nama : ${pushname}
 ├ Nomor : https://wa.me/${sender.split('@')[0]}
@@ -398,7 +398,7 @@ _*Note*_ :
 
 Follow Instagram kami :
 https://instagram.com/lunasintopup?igshid=YmMyMTA2M2Y=`
-reply(menu)
+reply(perip)
 console.log(color('[REGISTER]'), color(time, 'yellow'), 'Serial:', color(serialUser, 'cyan'), 'in', color(sender || groupName))
 break
         
@@ -455,7 +455,7 @@ if (budy == `p`) {
 if (!isRegistered) return reply(mess.verify)
 if (!isGroup) return reply(mess.only.group)
 if (!isOwner && !mek.key.fromMe) return
-const menu = `「 *TRANSAKSI PROSES* 」
+const dddd = `「 *TRANSAKSI PROSES* 」
 
 ${wk}📅 TANGGAL  : ${tanggal}${wk}
 ${wk}⌚ JAM      : ${time} WIB${wk}
@@ -463,13 +463,13 @@ ${wk}⏳ STATUS   : Proses${wk}
 
 
 Pesanan⁩ sedang di proses!`
-reply(menu)
+reply(dddd)
 }
 if (budy == `P`) {
 if (!isRegistered) return reply(mess.verify)
 if (!isGroup) return reply(mess.only.group)
 if (!isOwner && !mek.key.fromMe) return
-const menu = `「 *TRANSAKSI PROSES* 」
+const ddd = `「 *TRANSAKSI PROSES* 」
 
 ${wk}📅 TANGGAL  : ${tanggal}${wk}
 ${wk}⌚ JAM      : ${time} WIB${wk}
@@ -477,33 +477,33 @@ ${wk}⏳ STATUS   : Proses${wk}
 
 
 Pesanan⁩ sedang di proses!`
-reply(menu)
+reply(ddd)
 }
 if (budy == `d`) {
 if (!isRegistered) return reply(mess.verify)
 if (!isGroup) return reply(mess.only.group)
 if (!isOwner && !mek.key.fromMe) return
-const menu = `「 *TRANSAKSI BERHASIL* 」
+const dd = `「 *TRANSAKSI BERHASIL* 」
 
 ${wk}📅 TANGGAL  : ${tanggal}${wk}
 ${wk}⌚ JAM      : ${time} WIB${wk}
 ${wk}⏳ STATUS   : Berhasil${wk}
 
 Terimakasih,⁩ Next Order ya🙏`
-reply(menu)
+reply(dd)
 }
 if (budy == `D`) {
 if (!isRegistered) return reply(mess.verify)
 if (!isGroup) return reply(mess.only.group)
 if (!isOwner && !mek.key.fromMe) return
-const menu = `「 *TRANSAKSI BERHASIL* 」
+const d = `「 *TRANSAKSI BERHASIL* 」
 
 ${wk}📅 TANGGAL  : ${tanggal}${wk}
 ${wk}⌚ JAM      : ${time} WIB${wk}
 ${wk}⏳ STATUS   : Berhasil${wk}
 
 Terimakasih,⁩ Next Order ya🙏`
-reply(menu)
+reply(d)
 }
 }
 	} catch (e) {
